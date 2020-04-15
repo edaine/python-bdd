@@ -1,0 +1,4 @@
+myenv
+mockenv
+*.pyc
+__pycache__
