@@ -1,6 +1,3 @@
-print('This will run when the file is imported.')
-
-
 class Account(object):
     def __init__(self, id, balance):
         self.account_id = id

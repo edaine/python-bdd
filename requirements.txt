@@ -1,3 +1,9 @@
 pytest
+pytest-cov
 nose
+rednose
+nose-cov
 behave
+mock
+pep8
+
