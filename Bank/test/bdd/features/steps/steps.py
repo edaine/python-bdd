@@ -12,6 +12,13 @@ def i_create_account_with_balance_of_group1(context, account_number, balance):
     BANK.add_account(a)
 
 
+@given(u'I create the following accounts')
+def i_create_the_following_accounts(context):
+    for row in context.table:
+        a = Account(row['account_number'], row['balance'])
+        BANK.add_account(a)
+
+
 @given(u'I visit the homepage')
 def i_visit_the_homepage(context):
     context.browser = TestApp(app)
