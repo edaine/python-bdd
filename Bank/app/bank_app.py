@@ -1,4 +1,4 @@
-from Bank.app.bank import Bank
+from app.bank import Bank
 from flask import Flask, render_template, request
 
 
@@ -9,7 +9,6 @@ BANK = Bank()
 
 @app.route('/')
 def index():
-    print("@app.route('/')")
     if None != request.args.get('account_number'):
         account_number = request.args.get('account_number')
         balance = BANK.get_account_balance(account_number)

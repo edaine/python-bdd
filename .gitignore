@@ -3,3 +3,6 @@ mockenv
 *.pyc
 __pycache__
 .vscode
+Bank/log.html
+Bank/output.xml
+Bank/report.html

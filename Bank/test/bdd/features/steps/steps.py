@@ -24,7 +24,6 @@ def i_visit_the_homepage(context):
     context.browser = TestApp(app)
     context.browser.response = context.browser.get('http://localhost:5000/')
     assert_equal(context.browser.response.status_code, 200)
-    print("[END] i_visit_the_homepage")
 
 
 @when(u'I enter the account number "{account_number}"')
