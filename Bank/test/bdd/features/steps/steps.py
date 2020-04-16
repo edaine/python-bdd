@@ -2,8 +2,8 @@ from behave import *
 from nose.tools import assert_equal, assert_in
 from webtest import TestApp
 
-from app.bank_app import app, BANK
-from app.account import Account
+from Bank.app.bank_app import app, BANK
+from Bank.app.account import Account
 
 
 @given(u'I create account "{account_number}" with balance of "{balance}"')

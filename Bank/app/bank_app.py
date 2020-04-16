@@ -1,4 +1,4 @@
-from app.bank import Bank
+from Bank.app.bank import Bank
 from flask import Flask, render_template, request
 
 
