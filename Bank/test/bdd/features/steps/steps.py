@@ -17,14 +17,14 @@ def i_visit_the_homepage(context):
     context.browser = TestApp(app)
     context.browser.response = context.browser.get('http://localhost:5000/')
     assert_equal(context.browser.response.status_code, 200)
-    # assert_equal(context.browser.response.text, 'Hello World!')
+    print("[END] i_visit_the_homepage")
 
 
 @when(u'I enter the account number "{account_number}"')
 def when_i_enter_the_account_number_group1(context, account_number):
     form = context.browser.response.forms['account-form']
     form['account_number'] = account_number
-    context.browser.form_response = form.submit()
+    context.browser.form_response = form.submit('submit')
     assert_equal(context.browser.form_response.status_code, 200)
 
 
